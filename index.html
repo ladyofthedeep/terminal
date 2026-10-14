@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>st3phy's portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+
+  <div class="crt" id="crt">
+    <div class="titlebar">
+      <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+      <span class="label">guest@portfolio:~</span>
+    </div>
+
+    <div class="boot" id="boot"></div>
+
+    <div class="screen" id="screen">
+      <div class="intro">
+Welcome !  This terminal runs my portfolio ≽^• ˕ • ྀི≼
+Get to know me better by typing <strong>help</strong> to see available commands, then press enter.
+      </div>
+      <div id="history"></div>
+    </div>
+
+    <pre class="signature">
+       ▄▄▄      ▄▄▄▄      ▄   ▄▄▄       ▄▄▄      ▄▄▄▄             ▄   ▐▄▄ 
+     ▄▒▀▀█▄▄▄   ▐███      ▐▄■▀▀▀█▄▄   ▄▄█▀▀▀▄    ▐███           ▄▄▌   ▐█▀▀
+   ▄▄█▌  ▐█▀▀█ ▀▄██▄ ▄▄▄  ██    ▐█▀▀ ▀▀█▌   ▐▄▄   ██▌ ▄▄▄       █▓    ▓▓▌ 
+  ▐███  ▐▓▓█▀   ▀▓█▀▀▀▀  ▐██ ▄▄▀▀     ▐▓▓    ▓█   ▓█▄▀▀▀█▄▄    ▀▀█▌  █▄█▌ 
+ ▄  ▀██▄▄        ▓▓      ▐▐▓▌         ░█▒▌  ▐█▀▀  ▓▓    ▐█▀▀     ▀░▄▀▐██▌ 
+▄▓▌  ▐██▓▌      ▐▓▓   ▄  ░░▓▓   ▄▄▀▀   █▓▀▄▄░▀   ▐▓▓    ▓▓▌        ▄▄ ▓██▌
+▓█▌  ▄████      ▐▐▓▌  ▐▌  ▀▀▀▀▀▀      ▐▓▓        ▐▐▓▌  ▐▓█      ▄█▀  ▐▓██▌
+▀█▄▄▄███▀       ░■█▓░▄▀               ▐▐▓▌       ░■█▓  ▐▀█░▄▄▄  █    ▓▓█░▌
+ ▀▀▀░▀▀▀         ▀▀▀▀                 ░■█▓░       ▀▀▀    ▀▀▀▀    ▀▄▄▓▀▀░█ 
+                                       ▀▀▀▀                         ▀▀▀▀  
+                                            </pre>
+
+    <div class="input-row" id="inputRow">
+      <span class="prompt-symbol" id="livePrompt">guest@portfolio:~$</span>
+      <div class="input-wrap">
+        <span class="typed-echo" id="typedEcho"></span><span class="cursor" id="cursor"></span>
+        <input id="cmd" class="cmd-input" type="text" autocomplete="off" spellcheck="false" />
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
