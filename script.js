@@ -153,7 +153,7 @@ const PROJECT_LIST = [
     tagline: 'An interactive underwater adventure game built with HTML5 Canvas and JavaScript. Features physics-based mechanics and sprite detection.',
     description: 'Dive and Detect is a casual hidden-object game where you search the ocean depths to find hidden marine life. You simply hover your mouse across the screen like an underwater spotlight, revealing camouflaged fish as you explore. It is a simple, relaxing, and addictive gameplay experience.',
     tech: ['Javascript', 'HTML5', 'CSS3'],
-    live: 'Currently unavailable',
+    live: 'https://st3phy.com/dive-detect-main/index.html',
     code: 'https://Github.com/sl14048/dive-detect',
   },
   {
@@ -174,6 +174,15 @@ const PROJECT_LIST = [
     live: 'Currently unavailable',
     code: 'https://github.com/sl14048/stop-de-ontkoking',
   },
+  {
+    slug: 'four',
+    title: 'Calla',
+    tagline: 'a rhizomatous perennial plant belonging to the genus Zantedeschia in the aroid family',
+    description: 'A website that teaches you all about the Calla lily. Are you interested? click on the link to learn.',
+    tech: ['HTML5', 'CSS3', 'JS', 'GSAP'],
+    live: 'https://calla-lime.vercel.app/',
+    code: 'https://github.com/ladyofthedeep/calla',
+  }
 
 ];
 
@@ -185,8 +194,7 @@ function projectHtml(p) {
   return (
     `<b>${p.title}</b> — ${p.description}\n` +
     `tech: ${p.tech.join(' · ')}\n` +
-    `live: ${p.live}\n` +
-    // `live: <a href="${p.live}" target="_blank" rel="noopener">${p.live.replace(/^https?:\/\//, '')}</a>\n` +
+    `live: <a href="${p.live}" target="_blank" rel="noopener">${p.live.replace(/^https?:\/\//, '')}</a>\n` +
     `code: <a href="${p.code}" target="_blank" rel="noopener">${p.code.replace(/^https?:\/\//, '')}</a>`
   );
 }
